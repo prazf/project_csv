@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Upload and Parse CSV File
 
 // Check if the form has been submitted
@@ -20,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             while (($row = fgetcsv($handle)) !== FALSE) {
                 $data[] = $row;
             }
-
+            $_SESSION['data']= $data;
             // Close the file
             fclose($handle);
 
