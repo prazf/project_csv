@@ -1,1 +1,1 @@
-https://github.com/tecnickcom/TCPDF.git for tcpdf library
+git clone https://github.com/tecnickcom/TCPDF.git for tcpdf library
